@@ -1,14 +1,9 @@
 import React from "react";
-import reactDom from "react-dom";
 
-export const Counter = ({dsec, secs, mins, hrs}) => {
+export const Counter = ({char}) => {
     return (
-        <div className="d-flex justify-content-around bg-dark">
-            <i class="fa fa-clock text-white fs-1 my-auto"></i>
-            <h1 className="text-white" style={{fontFamily: 'Times New Roman'}}>{hrs}</h1>
-            <h1 className="text-white" style={{fontFamily: 'Times New Roman'}}>{mins}</h1>
-            <h1 className="text-white" style={{fontFamily: 'Times New Roman'}}>{secs}</h1>
-            <h1 className="text-white" style={{fontFamily: 'Times New Roman'}}>{dsec}</h1>
+        <div className="my-4 bg-dark border rounded border-secondary border-3 px-3 py-4">
+            <h1 className="text-white fw-semibold m-0" style={{fontFamily: 'Times New Roman'}}>{char}</h1>
         </div>
     )
 }

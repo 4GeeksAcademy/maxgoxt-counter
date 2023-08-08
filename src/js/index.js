@@ -13,9 +13,13 @@ let dsec = 0
 let secs = 0
 let mins = 0
 let hrs = 0
+let dia = 0
+
+
+
 //render your react application
 function CounterSec() {
-    ReactDOM.render(<Home dsec={dsec} secs={secs} mins={mins} hrs={hrs}/>, document.querySelector("#app"));
+    ReactDOM.render(<Home dsec={dsec} secs={secs} mins={mins} hrs={hrs} dia={dia}/>, document.querySelector("#app"));
     dsec++
     if (dsec > 9) {
         secs ++
@@ -27,8 +31,8 @@ function CounterSec() {
                 hrs ++
                 mins = 0
                 if (hrs > 9) {
-                    mins ++
-                    secs = 0
+                    dia ++
+                    hrs = 0
                 }
             }
         }
